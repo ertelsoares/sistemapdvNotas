@@ -1,0 +1,384 @@
+h4 {padding-bottom: 2px; margin-bottom: 0; text-align: left;}
+p {text-align: left;}
+
+#container{border:none;}
+
+#relatorio-head, .relatorio-head{display:block;}
+
+#relatorio-titulo{color:#000; font-size:16pt; font-weight:bold;}
+#relatorio-subtitulo1{padding-top:5px;color:#000; font-size:10pt; font-weight:normal;}
+#relatorio-subtitulo2{color:#000; font-size:10pt; font-weight:normal;}
+
+#header-container{display:none}
+#menu-container{display:none}
+#top-area{display:none}
+#footer{display:none}
+#content{width:100%;}
+.titulo-tela{display:none}
+.no-print {display: none;}
+
+h1{display:none}
+#mini-pesquisa-area{display:none}
+#panel{display:none}
+.commands{display:none}
+.side{display:none}
+.frame{width:100%}
+
+#header{float:left; width:100%;}
+#titulo{font-size: 12pt; font-weight: bold; padding: 10px 0;}
+body, td{font-family:Arial, Helvetica, sans-serif; font-size:8pt;}
+
+a:link, a:active, a:visited{ color:#0000CC }
+img{border:0}
+#datatable-area {
+	padding: 0 !important;
+}
+#datatable, .datatable {width: 100%; padding-bottom: 4px; }
+#datatable table, .datatable table {
+	font-size: 9pt;
+	border-collapse: collapse;
+	color: #000;
+	width: 100%;
+}
+
+#datatable th, .datatable th {
+	font-weight: bold;
+    height: 25px;
+    padding-top: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#datatable td, .datatable td {
+	text-align: left;
+	border-bottom: #cccccc 1px solid;
+	vertical-align: middle;
+	padding: 3px 3px;
+}
+
+#datatable tr.div, .datatable tr.div {background: #eee}
+
+input.white{
+	margin-top: 25px;
+	background-color: #f5f5f5;
+	cursor: pointer;
+	border: #ccc 1px solid;
+	font-weight: bold;
+	padding: 5px 15px;
+}
+
+input.white:hover {
+	cursor: pointer;
+	background-color: #E1F4A8;
+	}
+
+.totaisRelatorio{
+	margin-top:10px;
+	width:100%;
+	text-align:left;
+}
+
+
+table.listaRecibo {
+	font-size: 9pt;
+	border-collapse:collapse;
+	background:#fff;
+	color:#000;
+	border-top:solid 1px black;
+	border-left:solid 1px black;
+	border-right:solid 1px black;
+	/*width: 97%;*/
+}
+
+th.listaRecibo  {border-bottom:1px solid black; background:#EBEBEB}
+td.listaRecibo {border-bottom:1px solid black;}
+
+.totaisRecibo{
+	font-size:10pt;
+	float: right;
+	padding: 7px;
+	text-align: right;
+	border:solid 1px black;
+}
+
+h5{
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.rodapeRecibo{
+	text-align: left;
+	margin-top: 15px;
+}
+
+.fonteMaior{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.linha_grossa{
+	border-bottom: solid 2px black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.linha_fina{
+	border-bottom: solid 1px black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+
+.fonteDestaque{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+span.fonteMaior{
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+.fonteMenor{
+	font-size: 8pt;
+}
+
+.cabecalho{
+	padding-bottom: 15px;
+}
+
+.rodape{
+	padding-top: 10px;
+}
+
+.content{
+	padding: 10px;
+}
+
+table.cabecalhoReceita {
+	border: solid 1px black;
+	border-collapse: collapse;
+}
+
+table.cabecalhoReceita th {
+	border-bottom: solid 1px black;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+table.cabecalhoReceita td {
+	padding-left: 8px;
+	font-size: 8pt;
+}
+
+table.fonteNormal td{
+	font-size: 10pt;
+}
+
+.tituloCentro{
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.pleasewait{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index:1;
+}
+
+/********************** MODAL MESSAGE ****************************** */
+.modalDialog_transparentDivs{
+	filter:alpha(opacity=40);	/* Transparency */
+	opacity:0.4;	/* Transparency */
+	background-color:#AAA;
+	z-index:10;
+	position:absolute; /* Always needed	*/
+}
+.modalDialog_contentDiv{
+	border:3px solid #000;
+	padding:12px;
+	z-index:999;/* Always needed	*/
+	position:absolute;	/* Always needed	*/
+	background-color:#FFF;	/* White background color for the message */
+}
+.modalDialog_contentDiv_shadow{
+	z-index:11;/* Always needed	- to make it appear below the message */
+	position:absolute;	/* Always needed	*/
+	background-color:#555;
+	filter:alpha(opacity=30);	/* Transparency */
+	opacity:0.3;	/* Transparency */
+}
+
+.diverro{
+	margin-top: 10px;
+	color: red;
+	width: 150px;
+}
+
+
+.boxy-wrapper { position: absolute; }
+.boxy-wrapper.fixed { position: fixed; }
+.boxy-modal-blackout { position: absolute; background-color: #444; left: 0; top: 0; }
+.boxy-wrapper { empty-cells: show; }
+
+.boxy-wrapper .top-left,
+.boxy-wrapper .top-right,
+.boxy-wrapper .bottom-right,
+.boxy-wrapper .bottom-left { width: 2px; height: 2px; padding: 0 }
+
+.boxy-wrapper .top-left { height: 2px; background-color: black;}
+.boxy-wrapper .top-right { height: 2px; background-color: black;}
+.boxy-wrapper .bottom-right { height: 2px; background-color: black;}
+.boxy-wrapper .bottom-left { height: 2px; background-color: black;}
+.boxy-wrapper .top, .boxy-wrapper .bottom { height: 2px; background-color: black; padding: 0 }
+.boxy-wrapper .left, .boxy-wrapper .right { width: 2px; background-color: black; padding: 0 }
+
+.boxy-wrapper .title-bar { padding: 6px; position: relative; }
+.boxy-wrapper .title-bar.dragging { cursor: move; }
+.boxy-wrapper .title-bar h2 { font-size: 14pt; color: black; margin: 0; padding: 0; font-weight: bold; }
+.boxy-wrapper .title-bar .close { color: black; position: absolute; top: 6px; right: 6px; font-size: 90%; line-height: 1; }
+
+.boxy-inner { background-color: #fdfdfd; padding: 0 }
+.boxy-content { padding: 20px; }
+
+.boxy-wrapper .question { width: 350px; min-height: 80px; }
+.boxy-wrapper .answers { text-align: right; }
+
+.close{background-image: url(images/close.gif); height:17px; width:17px;}
+.close:hover{background-color: #fff;}
+
+.ac_results{z-index:999999; position: absolute}
+
+
+
+/********************** FIM MODAL MESSAGE ****************************** */
+
+.caption {
+  	margin: 0px;
+	margin-left: 1px;
+  	margin-top: 6px;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #333;
+}
+
+input[readOnly]{
+	background-color: whitesmoke;
+}
+
+.readonly{
+	background-color: whitesmoke;
+}
+
+#controls-popup{padding-top:15px; text-align:right; }
+
+#datatable th.right{text-align:right; }
+#datatable td.right{text-align:right; }
+
+#datatable td table.item-rel td{border:0; margin:0; padding:0; line-height:11pt;}
+
+/************** Estilo impressão venda, proposta comercial e pedido de compra **************/
+
+.divBorda {padding: 8px; border-spacing: 0px; border: 1px solid #000;}
+
+.grid {width: 100%; padding-bottom: 0px; border-spacing: 0px; border-top: 1px solid #000; border-bottom: 1px solid #000; border-left: 1px solid #000;}
+/*.gridH {width: 100%; height: 100%; padding-bottom: 0px; border-spacing: 0px; border-bottom: 1px solid #000; border-left: 1px solid #000;}*/
+.gridH {width:100%; min-height:100%; padding-bottom: 0px; border-spacing: 0px; border-bottom: 1px solid #000; border-left: 1px solid #000;}
+
+
+/*nome grid*/
+.grid table, .gridH table {border-collapse: collapse; color: #000; width: 100%;}
+
+.grid th {
+	font-weight: bold;
+    height: 25px;
+    padding-top: 5px;
+    text-align: left;
+    border-right: 1px solid #000;
+    background-color: #F0F0F0;
+    font-size: 9pt;
+    padding-left: 5px; padding-right: 5px;
+}
+
+.gridH th {font-weight: bold; height: 30px; padding-top: 5px; padding-bottom: 5px; text-align: left; border-right: 1px solid #000; border-top: 1px solid #000; background-color: #F0F0F0; font-size: 9pt; padding-left: 5px; padding-right: 5px;}
+.grid td, .gridH td {text-align: left; border-top: 1px solid #000; border-right: 1px solid #000; vertical-align: middle; padding: 3px 0; font-size: 9pt; padding-left: 5px; padding-right: 5px;}
+.grid td.right{text-align:right;}
+.grid th.right{text-align:right;}
+.grid tr.div {background: #eee}
+
+.top-jd {display: none;}
+
+.numero-destaque {color:#000000; font-size:12pt; font-weight:bold; margin:0 0 3px; padding:0 0 2px;}
+.titulo-1024{color:#000; font-size:11pt; font-weight:bold; margin-bottom: 40px;}
+.resultado tr td{line-height:24px;}
+.resultado tr td.right, #datatable .resultado tr td.right {text-align: right; padding-right: 10px;}
+.resultado tr th.right{text-align: right; padding-right: 10px;}
+.info,#info{margin:0 0 0 1px;padding:0; font-weight:normal; border:0; color:#444; font-size:7.5pt;}
+div.info p {margin-top: 0px;}
+
+table.prontuario{border:none; margin:0; padding:0; border-collapse:collapse; width:100%; text-align:left;}
+table.prontuario th{font-size:8pt; color:#333; border-bottom:1px solid #ccc; padding:4px 5px; background:#FFF; font-weight:normal; }
+table.prontuario td{margin:0; border-bottom:1px solid #ccc; background-color:#fff; padding:4px 5px; font-size:9pt; color:#111}
+table.prontuario td.none{border:0; }
+#ui-datepicker-div, .ui-datepicker, .ui-datepicker-header, .ui-datepicker-calendar {display:none;}
+.anexo-imagens img{
+	max-width: 48%;
+	float: left;
+	margin-left: 10px;
+}
+.display_none { display:none; }
+.invisivel {
+	 visibility: hidden;
+	display: none;
+	height: 0;
+	clear: both;
+}
+#edicao-container {
+	padding: 0 !important;
+}
+
+.fixed-table-container table th div {
+	width: auto !important;
+}
+.btn-box-menu {
+	display: none;
+}
+
+table.reportMargin th:not(:last-child){
+	padding-right:10px;
+}
+
+table.reportMargin td:not(:last-child) {
+	padding-right:10px !important;
+}
+
+.font_bold {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.fixed-table-container-inner {
+	height: auto !important;
+}
+
+.titulo {
+	color:#000;
+	font-size:16pt;
+	font-weight:bold;
+}
+
+#pivotableOutput {
+	height: auto !important;
+}
+
+#pivotableOutput .pvtUi tbody > tr:nth-child(1), #pivotableOutput .pvtAxisContainer, #pivotableOutput .pvtVals {
+	display: none;
+}

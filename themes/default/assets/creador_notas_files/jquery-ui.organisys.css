@@ -1,0 +1,77 @@
+/* Ajustes para tela do Bling/Organyx */
+
+.ui-tabs.ui-widget-content{
+	border:none;
+	background-color:Transparent;
+	border-radius:0;
+	padding:0;
+	background-image:none;
+}
+.ui-tabs .ui-widget-content{
+	border:none;
+	background-color:Transparent;
+	border-radius:0;
+	padding:0;
+}
+.ui-tabs .ui-widget-header {
+	background-image:none;
+	background-color:Transparent;
+	border:none;
+	border-bottom:1px solid #BDBDBD;
+	border-radius:0;
+	margin: 10px 0 10px 0;
+}
+
+.ui-tabs li.ui-state-default {
+	/*border: 1px solid #D9E0EB;
+	border-bottom:none;
+	background-color: #EFEFE0;
+	background-image:none;*/
+}
+
+.ui-tabs li.ui-state-active {
+	background-image:none;
+	background-color: none;
+	font-weight: bold;
+	color: #000;
+}
+
+.ui-tabs .ui-state-active:hover {
+	background-color:#f8f8f8;
+}
+
+.ui-state-hover {
+	font-weight: bold;
+	color: #FFF;
+}
+
+.ui-tabs .ui-state-default a {
+	color:#7F8790;
+}
+
+.ui-tabs .ui-state-active a {
+	/*color:#6D9004;*/
+    border: 1px solid #BDBDBD;
+	border-bottom: none;
+}
+
+.ui-tabs ul li.ui-state-hover a,
+.ui-tabs ul li.ui-state-hover a:hover {
+	background-color:#f8f8f8;
+	color:#6D9004;
+	cursor:pointer;
+	padding: 0.5em 1em;
+}
+
+.ui-tabs .ui-state-focus {
+	background-color: #EFEFE0;
+	font-weight: bold;
+}
+.ui-autocomplete {
+	z-index:1000;
+}
+
+.box-side *[class*="ui-"] {
+     border-radius:0;
+	 background: none !important;
+}
